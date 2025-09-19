@@ -1,0 +1,169 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background: #222;
+  padding: 12px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  /* AQUI: Diminuindo o espaço entre os botões */
+  margin: 0 3px; 
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  text-align: center;
+  /* AQUI: Diminuindo o padding superior e inferior */
+  padding: 25px 20px; 
+  background: linear-gradient(135deg, #d60000, #ff3b3b);
+  color: white;
+}
+
+.hero h1 {
+  font-size: 2.0rem;
+}
+
+/* O código para o botão `.hero button` pode ser removido, pois ele não existe mais no HTML */
+
+/* Mantendo a classe `.btn` para estilizar os links */
+.btn {
+  padding: 8px 15px; 
+  border-radius: 5px;
+  background: #fff;
+  color: #d60000;
+  transition: all 0.3s ease; 
+  text-decoration: none; 
+  display: inline-block; 
+}
+
+.btn:hover {
+  background: #eee;
+  color: #a00;
+}
+/* Estilos para a imagem na seção .hero */
+#logo-principal {
+    width: 1050px; /* Use 'width' para forçar o tamanho */
+    height: auto;
+    margin-bottom: 20px; 
+}
+
+/* --- Estilos para as Páginas de Veículos e Contato --- */
+
+/* Estilo geral para as páginas de conteúdo */
+.pagina-veiculos, .contato {
+    padding: 50px 20px;
+    text-align: center;
+    color: #FF0000
+}
+
+.pagina-veiculos h2, .contato h2 {
+    font-size: 2rem;
+    color: #d36c6c;
+    margin-bottom: 40px;
+}
+
+/* Container de veiculos usando Flexbox para layout em grade */
+.veiculos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Estilo para cada cartão de veículo */
+.veiculo-card {
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Largura fixa para os cartões */
+    text-align: left;
+}
+
+.veiculo-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.veiculo-card h3 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    color: #222;
+}
+
+.veiculo-card .preco {
+    font-size: 1.2rem;
+    color: #d60000;
+    font-weight: bold;
+}
+
+.veiculo-card .promocao {
+    color: green;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* --- Estilos para a Página de Contato --- */
+.info-contato p {
+    margin-bottom: 10px;
+}
+
+.form-contato {
+    max-width: 500px;
+    margin: 30px auto;
+    text-align: left;
+}
+
+.form-contato label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.form-contato input,
+.form-contato textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Garante que o padding não afete a largura total */
+}
+
+.form-contato textarea {
+    height: 120px;
+    resize: vertical; /* Permite redimensionar apenas na vertical */
+}
+
+.form-contato button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #d60000;
+    color: #fff;
+    font-weight: bold;
+}
